@@ -21,10 +21,7 @@ __pycache__/
 logs/
 *.log
 
-# Trading data
-data/raw/
-data/processed/
-data/models/
+
 
 # OS files
 .DS_Store
