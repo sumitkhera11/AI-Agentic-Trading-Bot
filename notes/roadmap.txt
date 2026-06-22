@@ -1,0 +1,16 @@
+For your current roadmap, the target should be:
+
+Step 1:
+Build system that works correctly
+
+Step 2:
+Backtest
+
+Step 3:
+Paper trade
+
+Step 4:
+Measure results
+
+Step 5:
+Only then think about real money

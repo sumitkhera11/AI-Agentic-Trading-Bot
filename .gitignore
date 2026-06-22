@@ -1,0 +1,44 @@
+# Virtual Environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+
+# VS Code settings
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Trading data
+data/raw/
+data/processed/
+data/models/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build files
+build/
+dist/
+
+# PyInstaller
+*.spec
+
+# Temporary files
+*.tmp
+*.temp
+
+.history/

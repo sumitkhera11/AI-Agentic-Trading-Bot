@@ -1,0 +1,8 @@
+
+rules
+timeframe
+quantity
+papertrading
+options
+
+buy-touchingthelowerbandand3greencandles

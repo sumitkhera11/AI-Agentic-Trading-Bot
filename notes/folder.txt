@@ -1,0 +1,187 @@
+AI-Agentic-Trading-Bot/
+
+├── app/
+│   ├── agents/
+│   ├── market_data/
+│   ├── ml_models/
+│   ├── rag/
+│   ├── risk/
+│   ├── execution/
+│   ├── ui/
+│   ├── database/
+│   ├── scheduler/
+│   ├── utils/
+│   └── config/
+│
+├── notebooks/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── models/
+│
+├── tests/
+│
+├── logs/
+│
+├── docs/
+│
+├── requirements/
+│
+├── .env
+├── .gitignore
+├── main.py
+└── README.md
+
+
+----------------------------------
+Concept first:
+
+notebooks/
+    → experiments
+    → learning
+    → testing APIs
+    → pandas practice
+    → file handling practice
+
+app/
+    → actual project code
+
+data/
+    → project datasets
+
+For file handling now, yes ✅ create/use a separate notebook.
+
+You already have:
+
+Day_15_File_Handling.ipynb
+
+That is perfectly okay. No need to create another notebook right now.
+
+Now for CSV location:
+
+Do not keep CSV inside notebooks/.
+
+Bad:
+
+notebooks/
+    Day_15_File_Handling.ipynb
+    stock.csv
+
+Because later notebook files become messy and paths break.
+
+Create these folders now:
+
+AI-Agentic-Trading-Bot/
+
+├── app/
+├── notebooks/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── models/
+├── venv/
+├── req.txt
+
+From Git Bash:
+
+mkdir -p data/raw
+mkdir -p data/processed
+mkdir -p data/models
+
+or in PowerShell:
+
+mkdir data
+mkdir data\raw
+mkdir data\processed
+mkdir data\models
+
+Put files like:
+
+AI-Agentic-Trading-Bot/
+
+data/
+   raw/
+      RELIANCE.csv
+      AAPL.csv
+      stock_data.csv
+
+Then inside notebook:
+
+import pandas as pd
+
+df = pd.read_csv("../data/raw/RELIANCE.csv")
+
+print(df.head())
+
+Why ../ ?
+
+Because notebook is here:
+
+notebooks/
+    Day_15_File_Handling.ipynb
+
+and CSV is here:
+
+data/raw/
+
+So path movement:
+
+notebooks
+   ↑
+   |
+../
+   |
+project_root
+   ↓
+data/raw
+
+For later in your AI trading bot:
+
+data/raw/
+    raw_yfinance_data.csv
+    raw_news_data.csv
+
+data/processed/
+    clean_stock_data.csv
+    features.csv
+
+data/models/
+    xgboost_model.pkl
+
+Purpose:
+
+raw/
+    untouched API data
+
+processed/
+    cleaned data
+
+models/
+    trained ML models
+
+-------------------------------------
+Some symbols that work commonly with yfinance:
+
+US stocks
+AAPL → "AAPL"
+MSFT → "MSFT"
+NVDA → "NVDA"
+GOOGL → "GOOGL"
+AMZN → "AMZN"
+TSLA → "TSLA"
+META → "META"
+
+Indian NSE stocks (important for your future Upstox integration)
+RELIANCE.NS → "RELIANCE.NS"
+TCS.NS → "TCS.NS"
+INFY.NS → "INFY.NS"
+HDFCBANK.NS → "HDFCBANK.NS"
+SBIN.NS → "SBIN.NS"
+TATAMOTORS.NS → "TATAMOTORS.NS"
+
+ETFs / Indexes
+SPY → "SPY"
+QQQ → "QQQ"
+
+For your current proje

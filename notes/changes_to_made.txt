@@ -1,0 +1,18 @@
+| Phase                |    Data Source | Period |  Interval |
+| -------------------- | -------------: | -----: | --------: |
+| Learning / debugging |       yfinance |   `1d` |      `1m` |
+| Strategy testing     |       yfinance |  `3mo` |      `5m` |
+| ML training          |       yfinance |   `1y` |      `1d` |
+| Backtesting          |       yfinance |   `2y` |      `1h` |
+| Paper trading        |    Broker feed |   Live | Real-time |
+| Production           | WebSocket feed |   Live | Tick data |
+
+
+Now:
+yfinance(1m)
+
+Later:
+Upstox WebSocket
+
+Final:
+Multi-broker live stream
