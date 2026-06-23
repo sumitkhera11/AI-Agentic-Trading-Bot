@@ -2,8 +2,12 @@ pandas
 numpy
 matplotlib
 statsmodels
-pandas_datareader
-pandas-ta-openbb
+pandas-datareader
 yfinance
 scikit-learn
 PyPortfolioOpt
+openpyxl
+jupyter
+scipy
+requests
+python-dotenv
