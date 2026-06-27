@@ -1,0 +1,37 @@
+Phase 1 (now)
+
+Python
+Pandas
+NumPy
+yfinance
+Matplotlib
+Scikit-learn
+Backtesting
+
+Phase 2
+
+Logistic Regression
+Random Forest
+XGBoost
+Paper trading
+
+Phase 3
+
+FastAPI
+Database
+Agents
+
+Phase 4
+
+Docker
+Cloud deployment
+
+Phase 5
+
+Evaluate FreqAI
+
+One-line recommendation for your project:
+
+Learn ML yourself first → build your own prediction pipeline → use Docker later → evaluate FreqAI much later.
+
+Right now I would spend 0 hours on FreqAI and 95% effort on ML + backtesting fundamentals.
